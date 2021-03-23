@@ -24,7 +24,6 @@ public class QueryStudentDemo
 
             System.out.println("<====== All students below =======>");
             List<Student> theStudents = session.createQuery("from Student").getResultList();
-//            displayStudents(theStudents);
 
             System.out.println("<====== Students list containing Wall below ======>");
             theStudents = session.createQuery("from Student s where s.lastName = 'Scott'").getResultList();
